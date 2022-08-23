@@ -1,0 +1,45 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" x:Class="WpfApp1.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+   
+    
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30">
+        <Border BorderThickness="3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="17"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox/>
+                <ToggleButton Checked="ToggleButton_Checked" Content="&gt;" Grid.Column="1"/>
+            </Grid>
+
+        </Border>
+        <Popup x:Name="popup" Width="100" Height="100" Placement="Bottom" StaysOpen="False">
+            <ListView>
+                <ListViewItem Content="item1"/>
+                <ListViewItem Content="item2"/>
+                <ListViewItem Content="item3"/>
+                <ListViewItem Content="item4"/>
+                <ListViewItem Content="item5"/>
+                <ListViewItem Content="item6"/>
+                <ListViewItem Content="item7"/>
+                <ListViewItem Content="item8"/>
+                <ListViewItem Content="item9"/>
+                <ListViewItem Content="item10"/>
+                <ListViewItem Content="item11"/>
+                <ListViewItem Content="item12"/>
+                <ListViewItem Content="item13"/>
+
+            </ListView>
+        </Popup>
+        
+    </Grid>
+</Window>
