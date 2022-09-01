@@ -13,7 +13,13 @@ namespace WinFormsApp1
             a.DoubleValue = 40;
             bindingSource.DataSource = a;
             class11.DataBindings.Add(new Binding("Value", bindingSource, "DoubleValue", true));
+            button1.Click += Button1_Click;
             
+        }
+
+        private void Button1_Click(object? sender, EventArgs e)
+        {
+            MessageBox.Show(a.DoubleValue.ToString());
         }
     }
 
